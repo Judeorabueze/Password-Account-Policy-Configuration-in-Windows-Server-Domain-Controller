@@ -28,3 +28,47 @@ In this project, I configured Password and Account Policies within a Windows Ser
 - Account lockout duration: 30 minutes
 - Reset account lockout counter after: 15 minutes
 
+## Implementation Steps
+
+### 1. Configuring Password Policy in Windows Domain Controller
+#### Steps Performed:
+
+<b>a. Launch the Domain Controller VM</b>
+- Opened the Domain Controller Virtual Machine and navigated to the <b>Server Manager</b> Dashboard.
+- Clicked on <b>Tools</b> and selected <b>Group Policy Management</b>.
+
+(See Pix 1)
+
+<b>b. Access the Default Domain Policy</b>
+- In the Group Policy Management Console, expanded:
+<b>Forest: judeorabueze.com > Domains > judeorabueze.com > Group Policy Objects</b>.
+- Located and selected the <b>Default Domain Policy</b>.
+
+(See Pix 2)
+
+<b>c. Open Group Policy Management Editor</b>
+- Right-clicked on Default Domain Policy and selected Edit.
+- Navigated to:
+<b>Policies > Windows Settings > Security Settings > Account Policies > Password Policy</b>.
+
+(See Pix 3)
+
+Review and Update Password Policy Settings
+
+Viewed the existing (default) password policy configuration.
+
+Right-clicked each policy setting, selected Properties, and updated them as follows:
+
+Minimum Password Length: Increased from 7 → 12 characters.
+
+Maximum Password Age: Increased from 42 days → 90 days.
+
+Enforce Password History: Reduced from 10 → 5 previous passwords remembered.
+
+(See Pix 4 for updated configuration)
+
+
+
+
+
+
