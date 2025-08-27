@@ -65,8 +65,34 @@ In this project, I configured Password and Account Policies within a Windows Ser
 
 *Updated Password Policy*
 
+###2. Configuring Account Lockout Policy in Windows Domain Controller
+#### Steps Performed:
 
+<b>a. Launch the Domain Controller VM</b>
+- Opened the Domain Controller Virtual Machine and navigated to the Server Manager Dashboard.
+- Clicked on Tools > Group Policy Management.
 
+<b>b. Access the Default Domain Policy</b>
+- In the Group Policy Management Console, expanded:
+<b>Forest: judeorabueze.com > Domains > judeorabueze.com > Group Policy Objects.</b>
+- Selected the Default Domain Policy.
+
+<b>c. Open Group Policy Management Editor</b>
+- Right-clicked on Default Domain Policy and selected Edit.
+- Navigated to:
+<b>Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.</b>
+
+(See Pix 1)
+
+*Default Account Lockout Policy Settings*
+
+- Viewed the default account lockout policy configuration.
+- Right-clicked each policy setting, selected Properties, and updated them as follows:
+  - Account Lockout Threshold: Set from 0 (disabled) → 5 invalid login attempts.
+  - Account Lockout Duration: Set to 30 minutes.
+  - Reset Account Lockout Counter After: Set to 15 minutes.
+
+(See Pix 2 for updated configuration)
 
 
 
