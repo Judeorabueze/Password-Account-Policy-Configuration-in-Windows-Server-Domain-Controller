@@ -40,7 +40,7 @@ In this project, I configured Password and Account Policies within a Windows Ser
 ![Group Policy Management](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Group%20policy%20management.PNG)
 
 <b>b. Access the Default Domain Policy</b>
-- In the Group Policy Management Console, expanded:
+- In the <b>Group Policy Management</b> Console, expanded:
 <b>Forest: judeorabueze.com > Domains > judeorabueze.com > Group Policy Objects</b>.
 - Located and selected the <b>Default Domain Policy</b>.
 
@@ -82,17 +82,28 @@ In this project, I configured Password and Account Policies within a Windows Ser
 - Navigated to:
 <b>Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.</b>
 
-(See Pix 1)
+![Default Account Lockout](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Default%20account%20lockout.PNG)
 
 *Default Account Lockout Policy Settings*
 
-- Viewed the default account lockout policy configuration.
+- Viewed the <b>default account lockout policy</b> configuration.
 - Right-clicked each policy setting, selected Properties, and updated them as follows:
-  - Account Lockout Threshold: Set from 0 (disabled) → 5 invalid login attempts.
-  - Account Lockout Duration: Set to 30 minutes.
-  - Reset Account Lockout Counter After: Set to 15 minutes.
+  - <b>Account Lockout Threshold:</b> Set from 0 (disabled) → 5 invalid login attempts.
+  - <b>Account Lockout Duration:</b> Set to 30 minutes.
+  - <b>Reset Account Lockout</b> Counter After: Set to 15 minutes.
 
-(See Pix 2 for updated configuration)
+![Updated Account Lockout](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Updated%20account%20lockout%20policy.PNG)
 
+*Account Lockout Policy Updated*
 
+## Lessons Learnt
+- Group Policy provides centralized management of user security.
+- Proper password and account policies help reduce risks of unauthorized access.
+- Security settings must balance protection with user convenience.
+
+## 
+This project highlights my <b>IT Support and SysAdmin skills</b> in:
+- Active Directory management
+- Group Policy configuration
+- Security best practices enforcement
 
