@@ -37,35 +37,33 @@ In this project, I configured Password and Account Policies within a Windows Ser
 - Opened the Domain Controller Virtual Machine and navigated to the <b>Server Manager</b> Dashboard.
 - Clicked on <b>Tools</b> and selected <b>Group Policy Management</b>.
 
-(See Pix 1)
+![Group Policy Management](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Group%20policy%20management.PNG)
 
 <b>b. Access the Default Domain Policy</b>
 - In the Group Policy Management Console, expanded:
 <b>Forest: judeorabueze.com > Domains > judeorabueze.com > Group Policy Objects</b>.
 - Located and selected the <b>Default Domain Policy</b>.
 
-(See Pix 2)
+![Default Policy](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Default%20Domain%20Policy.PNG)
 
 <b>c. Open Group Policy Management Editor</b>
 - Right-clicked on Default Domain Policy and selected Edit.
 - Navigated to:
 <b>Policies > Windows Settings > Security Settings > Account Policies > Password Policy</b>.
 
-(See Pix 3)
+![Default password policy](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/Pix%203%20password%20policy.PNG)
 
-Review and Update Password Policy Settings
+*The screenshot above shows the Domain Controller default policy*
 
-Viewed the existing (default) password policy configuration.
+- Viewed the existing (default) password policy configuration.
+- Right-clicked each policy setting, selected Properties, and updated them as follows:
+  - <b>Minimum Password Length</b>: Increased from 7 → 12 characters.
+  - <b>Maximum Password Age</b>: Increased from 42 days → 90 days.
+  - <b>Enforce Password History</b>: Reduced from 10 → 5 previous passwords remembered.
 
-Right-clicked each policy setting, selected Properties, and updated them as follows:
+![updated password policy](https://github.com/Judeorabueze/Password-Account-Policy-Configuration-in-Windows-Server-Domain-Controller/blob/main/pic%204%20password%20policy%20updated.PNG)
 
-Minimum Password Length: Increased from 7 → 12 characters.
-
-Maximum Password Age: Increased from 42 days → 90 days.
-
-Enforce Password History: Reduced from 10 → 5 previous passwords remembered.
-
-(See Pix 4 for updated configuration)
+*Updated Password Policy*
 
 
 
